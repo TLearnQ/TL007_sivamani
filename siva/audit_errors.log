@@ -1,0 +1,4 @@
+2025-12-06 10:31:56,066 [INFO] Ignored line: INFO: Connection successful
+2025-12-06 10:31:56,066 [INFO] Audit entry recorded: ERROR: Timeout
+2025-12-06 10:31:56,066 [INFO] Ignored line: INFO: Retry
+2025-12-06 10:31:56,066 [INFO] Processed: 3, Failed: 0
