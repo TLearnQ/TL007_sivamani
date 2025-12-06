@@ -37,17 +37,11 @@ def router(request, data=None):
     except Exception as e:
         return {"error": f"Internal failure: {e}"}
 
-# --- Demo Run ---
+
 if __name__ == "__main__":
-    # Add employees
+   
     print(router("POST /items", {"id": 101, "task": "project K"}))
     print(router("POST /items", {"id": 102, "task": "project S"}))
-
-    # List employees
     print(router("GET /items"))
-
-    # Search employees
     print(router("GET /search", {"query": "pro"}))
-
-    # Invalid request
     print(router("DELETE /items"))
