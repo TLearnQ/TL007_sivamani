@@ -1,0 +1,32 @@
+{
+  "http_method_count": {
+    "POST": 9,
+    "PUT": 4,
+    "DELETE": 3,
+    "GET": 1,
+    "PATCH": 1
+  },
+  "total_endpoints": 18,
+  "endpoints_with_response": 18,
+  "endpoints_without_response": 0,
+  "auth_methods": [
+    "BearerAuth",
+    "oAuth2ClientCredentials"
+  ],
+  "basic_services": [
+    "Data Source Registration List (Collection)",
+    "Delete location Subscription (Document)",
+    "Event triggered network adaptation (Document)",
+    "Individual Data Source Registration List",
+    "Individual Data Source Registration List (Document)",
+    "Individual LMC registration (Document)",
+    "Individual LMS registration (Document)",
+    "LMC configurations (Collection)",
+    "LMS Location Info Config Request (Collection)",
+    "LMS Location Request (Collection)",
+    "LMS Registration (Collection)",
+    "Location Subscription Request (Collection)",
+    "MC UE Location Report (Collection)",
+    "Update Location subscription (Document)"
+  ]
+}

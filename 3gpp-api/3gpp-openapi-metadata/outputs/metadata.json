@@ -1,0 +1,546 @@
+[
+  {
+    "file": "C:\\Users\\gango\\OneDrive\\Desktop\\3gpp-openapi-metadata\\3gpp-openapi-metadata\\data\\openapi\\TS24283_Lms_Information.yaml",
+    "title": "LMS_Information",
+    "version": "1.0.0-alpha.7",
+    "auth_methods": [
+      "BearerAuth"
+    ],
+    "has_global_security": true,
+    "method_count": {
+      "POST": 3,
+      "PUT": 1,
+      "DELETE": 1
+    },
+    "endpoints": [
+      {
+        "path": "/requests",
+        "method": "POST",
+        "tags": [
+          "LMS Location Request (Collection)"
+        ],
+        "summary": null,
+        "description": "Creates a new indiviual client location request in the LMS.",
+        "response_codes": [
+          "201",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/subscriptions",
+        "method": "POST",
+        "tags": [
+          "Location Subscription Request (Collection)"
+        ],
+        "summary": null,
+        "description": "Creates a new location subscription in the LMS.",
+        "response_codes": [
+          "201",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/subscriptions/{subscriptionId}",
+        "method": "PUT",
+        "tags": [
+          "Update Location subscription (Document)"
+        ],
+        "summary": null,
+        "description": "Updates an existing location subscription identified by the subscriptionId.\n",
+        "response_codes": [
+          "200",
+          "204",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/subscriptions/{subscriptionId}",
+        "method": "DELETE",
+        "tags": [
+          "Delete location Subscription (Document)"
+        ],
+        "summary": null,
+        "description": "Deletes an location subscription identified by the subscriptionId.\n",
+        "response_codes": [
+          "204",
+          "307",
+          "308",
+          "400",
+          "401",
+          "403",
+          "404",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": false,
+        "has_response": true
+      },
+      {
+        "path": "/configrequest",
+        "method": "POST",
+        "tags": [
+          "LMS Location Info Config Request (Collection)"
+        ],
+        "summary": null,
+        "description": "Requests server to update location reporting configuraton for a target user",
+        "response_codes": [
+          "201",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      }
+    ],
+    "coverage": {
+      "total_endpoints": 5,
+      "endpoints_with_response": 5,
+      "endpoints_without_response": 0
+    },
+    "basic_services": [
+      "Delete location Subscription (Document)",
+      "LMS Location Info Config Request (Collection)",
+      "LMS Location Request (Collection)",
+      "Location Subscription Request (Collection)",
+      "Update Location subscription (Document)"
+    ]
+  },
+  {
+    "file": "C:\\Users\\gango\\OneDrive\\Desktop\\3gpp-openapi-metadata\\3gpp-openapi-metadata\\data\\openapi\\TS24283_Lms_Reporting.yaml",
+    "title": "LMS_Reporting",
+    "version": "1.0.0-alpha.8",
+    "auth_methods": [
+      "BearerAuth"
+    ],
+    "has_global_security": true,
+    "method_count": {
+      "POST": 2,
+      "PUT": 1,
+      "DELETE": 1,
+      "GET": 1
+    },
+    "endpoints": [
+      {
+        "path": "/registrations",
+        "method": "POST",
+        "tags": [
+          "LMS Registration (Collection)"
+        ],
+        "summary": null,
+        "description": "Creates a new indiviual LMC registration in the LMS.",
+        "response_codes": [
+          "201",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/registrations/{registrationId}",
+        "method": "PUT",
+        "tags": [
+          "Individual LMS registration (Document)"
+        ],
+        "summary": null,
+        "description": "Updates an existing LMC registration in the LMS\n",
+        "response_codes": [
+          "200",
+          "204",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/registrations/{registrationId}",
+        "method": "DELETE",
+        "tags": [
+          "Individual LMC registration (Document)"
+        ],
+        "summary": null,
+        "description": "Deletes an existing LMC reigstration identified by the registrationId.\n",
+        "response_codes": [
+          "204",
+          "307",
+          "308",
+          "400",
+          "401",
+          "403",
+          "404",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": false,
+        "has_response": true
+      },
+      {
+        "path": "/locationreports",
+        "method": "POST",
+        "tags": [
+          "MC UE Location Report (Collection)"
+        ],
+        "summary": "submit a MC UE location report",
+        "description": null,
+        "response_codes": [
+          "201",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/configurations",
+        "method": "GET",
+        "tags": [
+          "LMC configurations (Collection)"
+        ],
+        "summary": "request to download the location configuration",
+        "description": null,
+        "response_codes": [
+          "200",
+          "307",
+          "308",
+          "400",
+          "401",
+          "403",
+          "404",
+          "406",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": false,
+        "has_response": true
+      }
+    ],
+    "coverage": {
+      "total_endpoints": 5,
+      "endpoints_with_response": 5,
+      "endpoints_without_response": 0
+    },
+    "basic_services": [
+      "Individual LMC registration (Document)",
+      "Individual LMS registration (Document)",
+      "LMC configurations (Collection)",
+      "LMS Registration (Collection)",
+      "MC UE Location Report (Collection)"
+    ]
+  },
+  {
+    "file": "C:\\Users\\gango\\OneDrive\\Desktop\\3gpp-openapi-metadata\\3gpp-openapi-metadata\\data\\openapi\\TS24549_ETC_Configuration.yaml",
+    "title": "ETC_Configuration",
+    "version": "1.1.0-alpha.1",
+    "auth_methods": [
+      "oAuth2ClientCredentials"
+    ],
+    "has_global_security": true,
+    "method_count": {
+      "PUT": 1
+    },
+    "endpoints": [
+      {
+        "path": "/val-services/{valServiceId}/configurations/{configurationId}",
+        "method": "PUT",
+        "tags": [
+          "Event triggered network adaptation (Document)"
+        ],
+        "summary": null,
+        "description": "Perfomrs event triggered network slice adaptation.\n",
+        "response_codes": [
+          "204",
+          "307",
+          "308",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      }
+    ],
+    "coverage": {
+      "total_endpoints": 1,
+      "endpoints_with_response": 1,
+      "endpoints_without_response": 0
+    },
+    "basic_services": [
+      "Event triggered network adaptation (Document)"
+    ]
+  },
+  {
+    "file": "C:\\Users\\gango\\OneDrive\\Desktop\\3gpp-openapi-metadata\\3gpp-openapi-metadata\\data\\openapi\\TS24549_NSCE_SliceInfo.yaml",
+    "title": "NSCE_SliceInfo",
+    "version": "1.1.0-alpha.1",
+    "auth_methods": [
+      "oAuth2ClientCredentials"
+    ],
+    "has_global_security": true,
+    "method_count": {
+      "POST": 3
+    },
+    "endpoints": [
+      {
+        "path": "/edn-slice-subscriptions",
+        "method": "POST",
+        "tags": [],
+        "summary": null,
+        "description": null,
+        "response_codes": [
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/plmn-slice-subscriptions",
+        "method": "POST",
+        "tags": [],
+        "summary": null,
+        "description": null,
+        "response_codes": [
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/ns-info-subscriptions",
+        "method": "POST",
+        "tags": [],
+        "summary": null,
+        "description": null,
+        "response_codes": [
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      }
+    ],
+    "coverage": {
+      "total_endpoints": 3,
+      "endpoints_with_response": 3,
+      "endpoints_without_response": 0
+    },
+    "basic_services": []
+  },
+  {
+    "file": "C:\\Users\\gango\\OneDrive\\Desktop\\3gpp-openapi-metadata\\3gpp-openapi-metadata\\data\\openapi\\TS24550_SS_SmDataSourceRegistration.yaml",
+    "title": "SM Server Data Source Registration and Notification Service",
+    "version": "1.0.0-alpha.0",
+    "auth_methods": [
+      "oAuth2ClientCredentials"
+    ],
+    "has_global_security": true,
+    "method_count": {
+      "POST": 1,
+      "PUT": 1,
+      "PATCH": 1,
+      "DELETE": 1
+    },
+    "endpoints": [
+      {
+        "path": "/datasources-reg-lists",
+        "method": "POST",
+        "tags": [
+          "Data Source Registration List (Collection)"
+        ],
+        "summary": null,
+        "description": "Register a new Data Source Registration.",
+        "response_codes": [
+          "201",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/datasources-reg-lists/{dataSourceRegId}",
+        "method": "PUT",
+        "tags": [
+          "Individual Data Source Registration List (Document)"
+        ],
+        "summary": "Update an existing Individual Data Source Registration List.",
+        "description": null,
+        "response_codes": [
+          "200",
+          "204",
+          "307",
+          "308",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/datasources-reg-lists/{dataSourceRegId}",
+        "method": "PATCH",
+        "tags": [
+          "Individual Data Source Registration List (Document)"
+        ],
+        "summary": "Modify an existing Individual Data Source Registration List.",
+        "description": null,
+        "response_codes": [
+          "200",
+          "204",
+          "307",
+          "308",
+          "400",
+          "401",
+          "403",
+          "404",
+          "411",
+          "413",
+          "415",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": true,
+        "has_response": true
+      },
+      {
+        "path": "/datasources-reg-lists/{dataSourceRegId}",
+        "method": "DELETE",
+        "tags": [
+          "Individual Data Source Registration List"
+        ],
+        "summary": "Delete an existing Individual Data Source Registration List.",
+        "description": null,
+        "response_codes": [
+          "204",
+          "307",
+          "308",
+          "400",
+          "401",
+          "403",
+          "404",
+          "429",
+          "500",
+          "503",
+          "default"
+        ],
+        "has_request": false,
+        "has_response": true
+      }
+    ],
+    "coverage": {
+      "total_endpoints": 4,
+      "endpoints_with_response": 4,
+      "endpoints_without_response": 0
+    },
+    "basic_services": [
+      "Data Source Registration List (Collection)",
+      "Individual Data Source Registration List",
+      "Individual Data Source Registration List (Document)"
+    ]
+  }
+]
